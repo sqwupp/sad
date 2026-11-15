@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центр Садовода</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <a href="catalog.html" class="catalog-btn">Каталог</a>
+        <button class="burger-menu" aria-label="Открыть меню">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo">
+            <img src="gnom.png" alt="Центр Садовода" class="logo-img">
+        </div>
+
+        <div class="icons">
+            <div class="icon" id="city-trigger">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="city-name">Оренбург</span>
+            </div>
+            <a href="#" class="icon" aria-label="Войти или зарегистрироваться">
+                <i class="fas fa-user"></i></a>
+            <a href="cart.html" class="icon cart-icon" aria-label="Корзина">
+                <i class="fas fa-shopping-cart"></i></a>
+            <div class="icon" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <nav class="main-menu">
+    <a href="index.html">Главная</a>
+    <a href="landscape.html">Ландшафт</a>
+    <a href="catalog.html">Каталог</a>
+</nav>
+
+    <div class="divider"></div>
+</header>
+
+    <section class="slider">
+        <div class="slide active">
+            <img src="слайдер1.webp" alt="Слайд 1" class="slide-img">
+            <div class="slide-content"></div>
+        </div>
+
+        <div class="slide">
+            <img src="слайдер2.webp" alt="Слайд 2" class="slide-img">
+            <div class="slide-content"></div>
+        </div>
+
+        <div class="slide">
+            <img src="слайдер3.webp" alt="Слайд 3" class="slide-img">
+            <div class="slide-content"></div>
+        </div>
+
+        <button class="slider-prev" aria-label="Предыдущий">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-next" aria-label="Следующий">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <section class="container products-section">
+        <h2 class="section-title">Рекомендуемые товары</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="бычье сердце.webp" alt="Семена томатов">
+                <h3>Семена томатов "Бычье сердце"</h3>
+                <p class="price">150 ₽</p>
+                <button class="add-to-cart">В корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="букер розы.webp" alt="Букет розы">
+                <h3>Букет розы</h3>
+                <p class="price">450 ₽</p>
+                <button class="add-to-cart">В корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="удобрение.webp" alt="Удобрение">
+                <h3>Удобрение</h3>
+                <p class="price">320 ₽</p>
+                <button class="add-to-cart">В корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="горшок.webp" alt="Горшок">
+                <h3>Горшок</h3>
+                <p class="price">680 ₽</p>
+                <button class="add-to-cart">В корзину</button>
+            </div>
+        </div>
+    </section>
+
+<section class="container products-section">
+    <h2 class="section-title">Новогодние ёлки и украшения</h2>
+    <div class="products-grid">
+        <div class="product-card">
+            <img src="ель2,5.webp" alt="Ель 2,4 метра">
+            <h3>Ель 2,4 метра</h3>
+            <p class="price">2 990 ₽</p>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="product-card">
+            <img src="елка1,8.webp" alt="Искусственная елка 1.8 м">
+            <h3>Искусственная елка 1.8 м</h3>
+            <p class="price">4 500 ₽</p>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="product-card">
+            <img src="набор игрушек.jpg" alt="Набор новогодних игрушек">
+            <h3>Набор новогодних игрушек</h3>
+            <p class="price">1 200 ₽</p>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="product-card">
+            <img src="гирлянда.webp" alt="Светодиодная гирлянда">
+            <h3>Светодиодная гирлянда</h3>
+            <p class="price">890 ₽</p>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+    </div>
+</section>
+
+<section class="container products-section">
+    <h2 class="section-title">Лопаты и садовый инструмент</h2>
+    <div class="products-grid">
+        <div class="product-card">
+            <img src="лопата1.webp" alt="Лопата">
+            <h3>Лопата большая</h3>
+            <p class="price">2 300 ₽</p>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="product-card">
+            <img src="лопата2.webp" alt="Лопата">
+            <h3>Лопата</h3>
+            <p class="price">1 800 ₽</p>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="product-card">
+            <img src="лопата3.webp" alt="Лопата">
+            <h3>Лопата</h3>
+            <p class="price">950 ₽</p>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="product-card">
+            <img src="лопата4.jpg" alt="Лопата">
+            <h3>Лопата</h3>
+            <p class="price">1 500 ₽</p>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+    </div>
+</section>
+
+    <section class="about-section">
+        <div class="container">
+            <h2>О Центре Садовода</h2>
+            <p>
+                С 2008 года мы предлагаем самый надежный вариант высочайшего качества, семена, растения и различные материалы, 
+                не содержащие ГМО, для обеспечения процветания вашего сада — 100% удовлетворение гарантировано.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="gnom.png" alt="Центр Садовода" class="logo-img">
+            </div>
+
+            <div class="footer-nav">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="landscape.html">Ландшафт</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Контакты</h4>
+                <p class="phone">+7 (800) 201-44-55</p>
+                <p class="phone">+7 (3532) 44-05-05</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+<div class="modal" id="city-modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Выберите город</h3>
+        <ul class="city-list">
+            <li data-city="Оренбург">Оренбург</li>
+            <li data-city="Орск">Орск</li>
+            <li data-city="Уфа">Уфа</li>
+            <li data-city="Саракташ">Саракташ</li>
+            <li data-city="Бузулук">Бузулук</li>
+        </ul>
+    </div>
+</div>
+
+    <button class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+<div class="modal profile-modal" id="profile-modal">
+    <div class="modal-content profile-content">
+        <span class="close profile-close">&times;</span>
+
+        <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="login">Вход</button>
+            <button class="tab-btn" data-tab="register">Регистрация</button>
+        </div>
+
+        <form id="login-form" class="profile-form active">
+            <h2>Вход</h2>
+            <div class="form-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" required placeholder="example@mail.ru">
+                <span class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Пароль</label>
+                <input type="password" id="login-password" required placeholder="минимум 6 символов">
+                <span class="error"></span>
+            </div>
+            <button type="submit" class="submit-btn">Войти</button>
+            <p class="switch-tab">Нет аккаунта? <span data-tab="register">Зарегистрироваться</span></p>
+        </form>
+
+        <form id="register-form" class="profile-form">
+            <h2>Регистрация</h2>
+            <div class="form-group">
+                <label for="reg-name">Имя</label>
+                <input type="text" id="reg-name" required placeholder="Ваше имя">
+                <span class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="reg-email">Email</label>
+                <input type="email" id="reg-email" required placeholder="example@mail.ru">
+                <span class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="reg-password">Пароль</label>
+                <input type="password" id="reg-password" required placeholder="минимум 6 символов">
+                <span class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="reg-password-confirm">Повторите пароль</label>
+                <input type="password" id="reg-password-confirm" required placeholder="Повторите пароль">
+                <span class="error"></span>
+            </div>
+            <button type="submit" class="submit-btn">Зарегистрироваться</button>
+            <p class="switch-tab">Уже есть аккаунт? <span data-tab="login">Войти</span></p>
+        </form>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
